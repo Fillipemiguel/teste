@@ -1,4 +1,4 @@
-module.exports = {
+const bancodedados = {
   consultorio: {
     nome: "Cubos Healthcare",
     identificador: 1,
@@ -19,5 +19,9 @@ module.exports = {
   },
   consultas: [],
   consultasFinalizadas: [],
-  laudos: []
-}
+  laudos: [],
+};
+
+const gerarIdentificador = () => {
+  return bancodedados.consultas.length + 1;
+};
